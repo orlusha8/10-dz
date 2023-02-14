@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="products">
+        <img class="coffee" src="https://etogemor.ru/wp-content/uploads/2017/08/polza-kofe-dlya-organizma.jpg" width="500" height="400">
+        <div class="products__content">
+            <h1 class="products__name" href="products.html">Кофе</h1>
+            <p class="products__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor quibusdam, alias reprehenderit aut voluptatibus, illo illum quos at labore autem fugiat possimus animi dolores ducimus distinctio totam vero laboriosam!</p>
+        </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script>
+        const data = JSON.parse(coffPhoto);
+        console.log(data);
+        const contentEl = document.querySelector('.products');
+        contentEl.textContent = `данные из json ${data.sammy.userName}`
+    </script>
+</body>
+
+</html>
